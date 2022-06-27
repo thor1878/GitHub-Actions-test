@@ -12,6 +12,8 @@ jobs:
     
     steps:
     - name: log
-      run: echo ${{ github.event.inputs.message }}
+      run: | 
+        echo ${{ github.event.inputs.message }}
+        exit 0
   
   
